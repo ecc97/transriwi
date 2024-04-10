@@ -1,0 +1,399 @@
+/* 
+Nombre Completo: Edwin Carmona Cifuentes
+Clan: Dell
+fecha: 9 de Abril de 2024
+*/
+
+/* Importación de las fuentes e iconos */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Formateo de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para un comportamiento de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos que ocupará todo el body de la página */
+body {
+    background-color: var(--blanco);
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Variables de entorno */
+:root {
+    --azul-oscuro:#181E4B;
+    --azul-claro:#6b5cff;
+    --blanco:#F9FAFC;
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    width: 100%;
+    height: 135px;
+    color: var(--azul-oscuro);
+}
+
+/* Estilos para la barra de navegación */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 25px;
+    position: fixed;
+    z-index: 1;
+}
+
+/* El título de la página */
+.nav-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-titulo img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-titulo h1 {
+    font-size: 64px;
+    font-style: italic;
+}
+
+.nav-titulo span {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav-titulo > h1::first-letter {
+    color: var(--azul-claro);
+}
+
+h1 > span::before {
+    content: 'R';
+    color: var(--azul-claro);
+}
+
+
+/* Los enlances dentro de la barra */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link_item {
+    list-style: none;
+}
+
+.nav-link_item > a {
+    display: flex;
+    gap: 8px;
+    color: var(--azul-oscuro);
+    text-decoration: none;
+}
+
+.nav-link_item > a:hover {
+    text-decoration: underline;
+    transition: .3s;
+}
+
+/* Los botones dentro de la barra */
+.btn-item > a {
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.btn-item > a:hover {
+    background-color: var(--azul-oscuro);
+    text-decoration: none;
+    transition: .3s;
+}
+
+/* Estilos para el main */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    gap: 50px;
+}
+
+/* Estilos para cada sección */
+.contenido-secciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilos para cada article de cada sección */
+.contenido-articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    flex: 1;
+}
+
+.contenido-articulos > h2 {
+    font-size: 48px;
+    font-style: italic;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.contenido-articulos > p {
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilos para cada imagen de cada sección */
+.contenido-img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex: 1;
+}
+
+.contenido-img > img {
+    width: 100%;
+    height: 750px;
+    border-radius: 50px;
+}
+
+
+/* Estilos para el mini formulario y sus input y botón de solicitar vehículo */
+.form-solicitud {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.form-solicitud > input {
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 8px;
+}
+
+.form-solicitud button {
+    width: 50%;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 25px;
+}
+
+.form-solicitud button:hover {
+    background-color: var(--azul-oscuro);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 70%;
+    margin-top: 25px;
+}
+
+th {
+    border-bottom: 6px solid var(--azul-claro);
+}
+
+/* Estilos para la sección de requisitos */
+
+#requisitos {
+    flex-direction: column;
+    scroll-margin-top: 8rem;
+}
+
+.requisitos_contenido {
+    justify-content: center;
+    gap: 8px;
+}
+
+.requisitos_contenido img {
+    border-radius: 50px;
+}
+
+/* Estilos para cada lista de requisito */
+.requisitos-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.requisito_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 40px;
+}
+
+.requisito_item i {
+    font-size: 32px;
+    color: var(--azul-claro);
+}
+
+.requisito_item h4 {
+    font-size: 24px;
+}
+
+.requisito_item ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    font-size: 18px;
+}
+
+/* Estilos para la sección de registro */
+.registro {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.registro > h3 {
+    font-size: 24px;
+}
+
+/* Estilos para el formulario */
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 944px;
+    gap: 12px;
+}
+
+/* Estilos para cada campo de registro */
+.campo {
+    background-color: var(--blanco);
+    padding: 12px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 8px;
+    resize: none;
+}
+
+/* Estilos para el botón de registrarse */
+.btn-register {
+    width: 55%;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    font-size: 18px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: var(--azul-oscuro);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de acerca de nosotros */
+#acerca-nosotros {
+    flex-direction: column;
+}
+
+.nosotros {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.quienesomos, .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.quienesomos > h3, .ubicacion > h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estilos para el botón flotante */
+
+.btn-flotante {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}
+
+.btn-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.btn-icon:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+/* Estilos en el pie de página */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-claro);
+    gap: 12px;
+    color: var(--blanco);
+    padding: 40px;
+}
+
+/* Estilos para los iconos de las redes sociales */
+.redes {
+    display: flex;
+    gap: 20px;
+}
+
+.redes-item {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.redes-item > i {
+    font-size: 32px;
+}
+
+.redes-item:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* Estilo para dar color al texto Riwi.io */
+.copyright > p > span{
+    color: var(--azul-oscuro);
+}
