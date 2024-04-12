@@ -273,6 +273,7 @@ th {
 .registro {
     flex-direction: column;
     gap: 30px;
+    scroll-margin-top: 8rem;
 }
 
 .registro > h3 {
@@ -319,6 +320,7 @@ th {
 /* Estilos para la sección de acerca de nosotros */
 #acerca-nosotros {
     flex-direction: column;
+    scroll-margin-top: 8rem;
 }
 
 .nosotros {
@@ -394,6 +396,7 @@ footer {
 }
 
 /* Estilo para dar color al texto Riwi.io */
-.copyright > p > span{
+.copyright > p > a{
     color: var(--azul-oscuro);
+    text-decoration: none;
 }
